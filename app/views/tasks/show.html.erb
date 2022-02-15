@@ -1,0 +1,13 @@
+<div>
+  <h2>
+    <%= @task.title %>
+  </h2>
+</div>
+<div class="description">
+  <p>Details : <%= @task.details %></p>
+  <p>Completed ? <%= @task.completed %></p>
+  <%= link_to "Edit", edit_task_path, class: "btn btn-light"%>
+</div>
+<div class="link">
+  <%= link_to "Back to list", tasks_path, class: "btn btn-primary"%>
+</div>
